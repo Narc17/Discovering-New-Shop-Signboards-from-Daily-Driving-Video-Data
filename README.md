@@ -1,1 +1,1 @@
-# Discovering-New-Shop-Signboards-from-Daily-Driving-Video-Data
+# Discovering New Shop Signboards from Daily Driving Video Data
