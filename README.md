@@ -26,12 +26,12 @@ We break our system down to 5 modules for 3 main phases: ***collect data, extrac
 1. Collect data
     -  As we all knew driving records are videos. There are too much redundant landscape information in a one day long query driving record. For example, the landscape captured by an unloading box truck. Therefore, before we pair query and reference driving records, we need to sample query driving record appropriately. To do so, we sample query video frames by their GPS coordinates with a desired haversine distance gap. (Fig.4)
 <figure>
-    <p align="center"><img src="/imgs/query_sampling.png" alt="Query sampling">  
+    <p align="center"><img src="/imgs/query_sampling.PNG" alt="Query sampling">  
     <p align="center">Fig.4) illustration of query sampling
 </figure>
     -  After query driving record sampling, we pair these sampled query image frames with video intervals from reference driving records by the haversine distance differences of  GPS coordinates between them. Besides, we also need to check the box truck driving directions between query and paired reference data on each paired result for data consistancy. Two videos at same geographical location but with different driving directions on an intersection, for instance. We utilize haversine formula to compute GPS bearing as driving direction to filter different driving direction reference video interval. As a result, all query and reference data are in similar geographical locations and driving directions in all GPS pairs. (Fig.5)
 <figure>
-    <p align="center"><img src="/imgs/gps_pairing.png" alt="GPS pairing">  
+    <p align="center"><img src="/imgs/gps_pairing.PNG" alt="GPS pairing">  
     <p align="center">Fig.5) illustration of pairing result
 </figure>
 2. Extract data
