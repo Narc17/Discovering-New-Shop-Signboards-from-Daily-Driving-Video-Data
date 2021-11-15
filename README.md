@@ -34,7 +34,9 @@ We break our system down to 5 modules for 3 main phases: ***collect data, extrac
     <p align="center"><img src="/imgs/gps_pairing.PNG" alt="GPS pairing">  
     <p align="center">Fig.5) illustration of pairing result
 </figure>
+
 2. Extract data
+
 3. Compare data
 
 # Codes
