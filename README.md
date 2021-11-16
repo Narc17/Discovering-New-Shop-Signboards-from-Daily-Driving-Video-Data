@@ -1,6 +1,6 @@
 # Discovering New Shop Signboards from Daily Driving Video Data
 
-This repo is one of the project description of Machine Discovery and Social Network Mining Lab, from the Department of Computer Science and Information Engineering, National Taiwan University. This project collaborated with an innovative AI application company, Omnieyes, in terms of ***discovering new shop signboards within the driving records of delivery box trucks.***
+This repo is one of the project description of Machine Discovery and Social Network Mining Lab, from the Department of Computer Science and Information Engineering, National Taiwan University. This project collaborated with a consumer technology company, Omnieyes, in terms of ***discovering new shop signboards within the driving records of delivery box trucks.***
 
 
 ## Introduction
