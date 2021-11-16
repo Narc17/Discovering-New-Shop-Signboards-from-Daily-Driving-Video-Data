@@ -17,7 +17,7 @@ Driving records are provided by our collaborating company, Omnieyes. They organi
 # Methodology
 It is very difficult to achieve our goal if we process driving records straight forward. We need to extract useful shop signboard information in these driving records and ***"compare"*** them appropriately. Thus, we bring up with Divide-and-conquer approach to build our system. It takes **ONE** recent (query) driving record and **MULTIPLE** old (reference) driving records as input data. The system architecture is shown below (Fig.3):
 <figure>
-    <p align="center"><img src="/imgs/system_architecture.png" alt="System architecture">  
+    <p align="center"><img src="/imgs/system_architecture.PNG" alt="System architecture">  
     <p align="center">Fig.3) system architecture
 </figure>
 
@@ -28,8 +28,8 @@ We break our system down to 5 modules for 3 main phases: ***collect data, extrac
  - After query driving record sampling, we pair these sampled query image frames with video intervals from reference driving records by the haversine distance differences of  GPS coordinates between them. Besides, we also need to check the box truck driving directions between query and paired reference data on each paired result for data consistancy. Two videos at same geographical location but with different driving directions on an intersection, for instance. We utilize haversine formula to compute GPS bearing as driving direction to filter different driving direction reference video interval. As a result, all query and reference data are in similar geographical locations and driving directions in all GPS pairs and each GPS pair includes one query video frame image and one or more reference video intervals. (Fig.5) <figure><p align="center"><img src="/imgs/gps_pairing.PNG" alt="GPS pairing"><p align="center">Fig.5) illustration of pairing result</figure>
 
 2. Extract data
- - We utilize an esemble detection model for detecting shop signboards on query video frame image in each GPS pair. It combines the predictions of a faster-RCNN with FPN model and a YOLOv5x model and applying Non Maximum Suppression (NMS) to eliminate redundant predictions. These two detection models are trained on a private dataset including 10,000 dashcam images with shop signboard labels. (Fig.6) <figure><p align="center"><img src="/imgs/detection_res.png" alt="Detection result"><p align="center">Fig.6) illustration of query shop signboard detection result</figure>
- - test
+ - We utilize an esemble detection model for detecting shop signboards on query video frame image in each GPS pair. It combines the predictions of a faster-RCNN with FPN model and a YOLOv5x model and applying Non Maximum Suppression (NMS) to eliminate redundant predictions. These two detection models are trained on a private dataset including 10,000 dashcam images with shop signboard labels. (Fig.6) <figure><p align="center"><img src="/imgs/detection_res.PNG" alt="Detection result"><p align="center">Fig.6) illustration of query shop signboard detection result</figure>
+ - test  (Fig.7) <figure><p align="center"><img src="/imgs/tracking_res.gif" alt="Tracking result"><p align="center">Fig.7) illustration of reference shop signboard tracking result</figure>
 
 4. Compare data
 
