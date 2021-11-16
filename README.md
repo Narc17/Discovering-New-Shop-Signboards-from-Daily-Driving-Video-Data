@@ -34,4 +34,4 @@ We break our system down to 5 modules for 3 main phases: ***collect data, extrac
 4. Compare data
 
 # Codes
-We will release the codes about shop signboard detection and comparison models and sample toy dataset as soon as we got the permissions from our cooperating company.
+We will release the codes about shop signboard detection and comparison models with their realted sample dataset as soon as we got the permission from our cooperating company.
