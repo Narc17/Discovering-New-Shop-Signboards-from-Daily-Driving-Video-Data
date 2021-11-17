@@ -43,4 +43,4 @@ We break our system down to 5 modules for 3 main phases: ***collect data, extrac
 
 
 ## Codes
-We will release the codes about shop signboard detection and embedding models with their related sample dataset as soon as we got the permission from our cooperating company.
+We released the codes about shop signboard detection and embedding models. We will release their related sample dataset as soon as we got the permission from our cooperating company.
