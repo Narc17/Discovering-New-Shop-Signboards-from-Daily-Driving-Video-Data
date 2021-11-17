@@ -43,4 +43,4 @@ We break our system down to 5 modules for 3 main phases: ***collect data, extrac
 
 
 ## Codes
-We released the codes about shop signboard detection and embedding models. We will release their related sample dataset as soon as we got the permission from our cooperating company.
+We released the training and evaluation codes of shop signboard detection and embedding models which were written on google colab. We will release their related sample dataset as soon as we got the permission from our cooperating company.
