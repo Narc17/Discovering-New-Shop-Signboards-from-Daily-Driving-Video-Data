@@ -1,7 +1,11 @@
 # Discovering New Shop Signboards from Daily Driving Video Data
 
-This repo is one of the project description of Machine Discovery and Social Network Mining Lab, from the Department of Computer Science and Information Engineering, National Taiwan University. This project collaborated with a consumer technology company, Omnieyes, in terms of ***discovering new shop signboards within the driving records of delivery box trucks.***
+This repo is one of the project description of Machine Discovery and Social Network Mining Lab, from the Department of Computer Science and Information Engineering, National Taiwan University. This project collaborated with a consumer technology company, Omnieyes, in terms of ***discovering new shop signboards from newly opened shops within the driving video records of delivery box trucks.***
 
+
+## Abstract
+
+This project utilizes driving video records from logistic delivery box trucks that repeatly deliver packages in a specific district but in various driving routes every day. We proposed a multi-component system architecture to discover new shop signboards from newly openend shops by comparing a recently recorded driving record and old driving records recorded in past several months. All of these driving records are recorded from dashcams with GPS trackers on the delivery box trucks. We implemented multiple deep learning models such as Faster-RCNN, YOLOv5 and Triplet Network with refined data that collected from raw driving video records. According to our experiment results, the proposed system successfully discovered 31 various new shop signboards between a driving record recoreded in 2020 November and 13 old driving records recorded in 2020 April from a delivery box truck. In this repo, we do not include data collecting and improving process and experiment results that covered in orginal literature.
 
 ## Introduction
 
